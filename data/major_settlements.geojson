@@ -1,0 +1,22 @@
+{
+"type": "FeatureCollection",
+"name": "major_settlements",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "Id": 23, "name": "ΓΥΡΙΣΤΑ", "population": 147, "code": "4302010104" }, "geometry": { "type": "Point", "coordinates": [ 22.548290759389662, 36.786984397472246 ] } },
+{ "type": "Feature", "properties": { "Id": 34, "name": "ΜΑΥΡΟΒΟΥΝΙ", "population": 4279, "code": "4302010101" }, "geometry": { "type": "Point", "coordinates": [ 22.56699013691923, 36.736242805062496 ] } },
+{ "type": "Feature", "properties": { "Id": 35, "name": "ΓΥΘΕΙΟN", "population": 4279, "code": "4302010101" }, "geometry": { "type": "Point", "coordinates": [ 22.56318310511481, 36.752719939716492 ] } },
+{ "type": "Feature", "properties": { "Id": 36, "name": "ΑΓΙΟΣ ΝΙΚΟΛΑΟΣ", "population": 180, "code": "4302040101" }, "geometry": { "type": "Point", "coordinates": [ 22.440673374444238, 36.829081730318471 ] } },
+{ "type": "Feature", "properties": { "Id": 46, "name": "ΣΚΟΥΤΑΡΙΟΝ", "population": 234, "code": "4302011701" }, "geometry": { "type": "Point", "coordinates": [ 22.500057471775065, 36.667059258055367 ] } },
+{ "type": "Feature", "properties": { "Id": 56, "name": "ΟΙΤΥΛΟΝ", "population": 224, "code": "4302031601" }, "geometry": { "type": "Point", "coordinates": [ 22.388493096014059, 36.707547459395499 ] } },
+{ "type": "Feature", "properties": { "Id": 89, "name": "ΚΟΚΚΑΛΑ", "population": 238, "code": "4302020401" }, "geometry": { "type": "Point", "coordinates": [ 22.472190808699555, 36.526112871993924 ] } },
+{ "type": "Feature", "properties": { "Id": 104, "name": "ΑΡΕΟΠΟΛΙΣ", "population": 888, "code": "4302030101" }, "geometry": { "type": "Point", "coordinates": [ 22.381546291354617, 36.6675785818951 ] } },
+{ "type": "Feature", "properties": { "Id": 109, "name": "ΦΛΟΜΟΧΩΡΙΟΝ", "population": 151, "code": "4302020106" }, "geometry": { "type": "Point", "coordinates": [ 22.470855526265535, 36.622442684735333 ] } },
+{ "type": "Feature", "properties": { "Id": 110, "name": "ΧΩΣΙΑΡΙΟΝ", "population": 142, "code": "4302011801" }, "geometry": { "type": "Point", "coordinates": [ 22.496427796693951, 36.715370059633827 ] } },
+{ "type": "Feature", "properties": { "Id": 117, "name": "ΠΥΡΓΟΣ ΔΙΡΟΥ", "population": 246, "code": "4302031701" }, "geometry": { "type": "Point", "coordinates": [ 22.384744116140983, 36.625903838502566 ] } },
+{ "type": "Feature", "properties": { "Id": 134, "name": "ΚΟΤΡΩΝΑΣ", "population": 292, "code": "4302020101" }, "geometry": { "type": "Point", "coordinates": [ 22.495062626360056, 36.620437871016897 ] } },
+{ "type": "Feature", "properties": { "Id": 162, "name": "ΚΟΚΚΙΝΑ ΛΟΥΡΙΑ", "population": 141, "code": "4302040401" }, "geometry": { "type": "Point", "coordinates": [ 22.448270227596272, 36.822321093238479 ] } },
+{ "type": "Feature", "properties": { "Id": 167, "name": "ΠΕΤΡΙΝΑ", "population": 272, "code": "4302040801" }, "geometry": { "type": "Point", "coordinates": [ 22.497136844988862, 36.840790299241164 ] } },
+{ "type": "Feature", "properties": { "Id": 175, "name": "ΑΙΓΙΑΙ", "population": 195, "code": "4302010301" }, "geometry": { "type": "Point", "coordinates": [ 22.513729377307776, 36.794779609969225 ] } }
+]
+}
