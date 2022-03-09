@@ -1,6 +1,9 @@
+import os from 'os';
 import fs from 'fs';
 import { Generation } from './generation.js';
 import config from './config.js';
+
+const timest = Date.now();
 
 console.log(`started at ${new Date().toLocaleTimeString()}`);
 
@@ -22,6 +25,7 @@ const nextGeneration = (generationIndex, population, demandPoints, gridPoints, p
     let generation = new Generation(population, demandPoints, gridPoints, parameters);
 
     console.log(`generation ${generationIndex}: ${generation.best.pMedianLength}, ${JSON.stringify(generation.best)}`);
+    fs.appendFileSync(`./data/results_no-weight_${timest}`, `${new Date().toLocaleTimeString()}, ${generationIndex}, ${JSON.stringify(generation.best)}${os.EOL}`);
 
     if (generationIndex > config.numberOfGenerations) {
         console.log(generation.best);
