@@ -27,12 +27,12 @@ const nextGeneration = (generationIndex, population, demandPoints, gridPoints, p
     console.log(`generation ${generationIndex}: ${generation.best.pMedianLength}, ${JSON.stringify(generation.best)}`);
     fs.appendFileSync(`./data/results_no-weight_${timest}`, `${new Date().toLocaleTimeString()}, ${generationIndex}, ${JSON.stringify(generation.best)}${os.EOL}`);
 
-    if (generationIndex > config.numberOfGenerations) {
-        console.log(generation.best);
-        console.log('ended (wip)');
-        console.log(`ended at ${new Date().toLocaleTimeString()}`);
-        return;
-    }
+    // if (generationIndex > config.numberOfGenerations) {
+    //     console.log(generation.best);
+    //     console.log('ended (wip)');
+    //     console.log(`ended at ${new Date().toLocaleTimeString()}`);
+    //     return;
+    // }
 
     nextGeneration(generationIndex + 1, generation.population, demandPoints, gridPoints, parameters);
 }
