@@ -22,13 +22,19 @@ const parameters = {
 }
 
 const start = () => {
-    nextGeneration(1, null, demandPoints, gridPoints, parameters);
+    let lastSavedPopulation = null;
+    if (fs.existsSync('./data/last_saved_population.txt')) {
+        lastSavedPopulation = JSON.parse(fs.readFileSync('./data/last_saved_population.txt'));
+    }
+
+    nextGeneration(1, lastSavedPopulation, demandPoints, gridPoints, parameters);
 }
 
 const nextGeneration = (generationIndex, population, demandPoints, gridPoints, parameters) => {
     let generation = new Generation(population, demandPoints, gridPoints, parameters);
 
     console.log(`generation ${generationIndex}: ${generation.best.pMedianLength}, ${JSON.stringify(generation.best)}`);
+    fs.writeFileSync('./data/last_saved_population.txt', generation.population);
     fs.appendFileSync(`./data/results_weighted_${timest}`, `${new Date().toLocaleTimeString()}, ${generationIndex}, ${JSON.stringify(generation.best)}${os.EOL}`);
 
     // if (generationIndex > config.numberOfGenerations) {
