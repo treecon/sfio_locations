@@ -34,7 +34,7 @@ const nextGeneration = (generationIndex, population, demandPoints, gridPoints, p
     let generation = new Generation(population, demandPoints, gridPoints, parameters);
 
     console.log(`generation ${generationIndex}: ${generation.best.pMedianLength}, ${JSON.stringify(generation.best)}`);
-    fs.writeFileSync('./data/last_saved_population.txt', generation.population);
+    fs.writeFileSync('./data/last_saved_population.txt', JSON.stringify(generation.population));
     fs.appendFileSync(`./data/results_weighted_${timest}`, `${new Date().toLocaleTimeString()}, ${generationIndex}, ${JSON.stringify(generation.best)}${os.EOL}`);
 
     // if (generationIndex > config.numberOfGenerations) {
