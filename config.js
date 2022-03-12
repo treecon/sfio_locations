@@ -1,7 +1,7 @@
 export default {
     roadNetworkGeoJson: 'network.geojson',
-    demandPointsGeoJson: 'settlements.geojson',
-    gridPointsGeoJson: 'settlements.geojson',
+    demandPointsGeoJson: 'settlements-customweight.geojson',
+    gridPointsGeoJson: 'settlements-customweight.geojson',
     populationNum: 200,
     elite: 10,
     oddsParam: 2,

@@ -198,7 +198,7 @@ function Generation(population, demandPoints, gridPoints, parameters) {
                 }
             }
             // lines.push(turf.lineString([pointA.geometry.coordinates, connectedFacility.geometry.coordinates]));
-            pMedianLength += dist*pointA.properties.population; // WEIGHTED
+            pMedianLength += dist*pointA.properties.population*pointA.properties.weight; // CUSTOM-WEIGHTED
         }
         let score = 1/pMedianLength;
         score = Math.pow(score, parameters.oddsParam);

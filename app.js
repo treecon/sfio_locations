@@ -12,7 +12,13 @@ demandPoints = {
     ...demandPoints,
     features: demandPoints.features.filter(x => x.properties.population),
 };
-const gridPoints = JSON.parse(fs.readFileSync(`./data/${config.gridPointsGeoJson}`));
+
+let gridPoints = JSON.parse(fs.readFileSync(`./data/${config.gridPointsGeoJson}`));
+gridPoints = {
+    ...gridPoints,
+    features: gridPoints.features.filter(x => x.properties.weight > 1),
+}
+
 const parameters = {
     populationNum: config.populationNum,
     elite: config.elite,
