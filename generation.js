@@ -189,7 +189,7 @@ function Generation(population, demandPoints, gridPoints, parameters) {
                 // let d = turf.distance(pointA, pointB);
                 const idPointA = pointA.properties.Id;
                 const idPointB = pointB.properties.Id;
-                let d = routesJson.find(x => x.points.includes(idPointA) && x.points.includes(idPointB)).distance;
+                let d = idPointA === idPointB ? 0 : routesJson.find(x => x.points.includes(idPointA) && x.points.includes(idPointB)).distance;
                 // let d = calculateRouteDistance(pointA.geometry.coordinates[0], pointA.geometry.coordinates[1], pointB.geometry.coordinates[0], pointB.geometry.coordinates[1]);
                 // console.log('dist', d);
                 if (d < dist) {
